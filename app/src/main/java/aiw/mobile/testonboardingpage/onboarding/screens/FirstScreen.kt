@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 
 class FirstScreen : Fragment() {
@@ -24,6 +26,11 @@ class FirstScreen : Fragment() {
         next.setOnClickListener {
             val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPagerr)
             viewPager?.currentItem = 1 // Pindah ke SecondScreen
+        }
+
+        val skip = view.findViewById<TextView>(R.id.textView)
+        skip.setOnClickListener {
+            findNavController().navigate(R.id.action_viewPagerFragment_to_loginFragment)
         }
     }
 

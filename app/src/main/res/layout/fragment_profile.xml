@@ -75,7 +75,7 @@
             <TextView
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="4dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="Aldy Imam Wijaya"
