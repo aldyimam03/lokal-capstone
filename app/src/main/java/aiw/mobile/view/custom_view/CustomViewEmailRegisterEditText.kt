@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 
-class CustomViewPasswordLoginEditText @JvmOverloads constructor(
+class CustomViewEmailRegisterEditText @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : AppCompatEditText(context, attrs) {
 
@@ -47,7 +47,7 @@ class CustomViewPasswordLoginEditText @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Password"
+        hint = "Email"
         textAlignment = View.TEXT_ALIGNMENT_TEXT_START
     }
 }
